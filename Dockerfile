@@ -1,4 +1,4 @@
-FROM nodejs:latest
+FROM node:latest
 
 RUN adduser --disabled-password --home /home/container container
 

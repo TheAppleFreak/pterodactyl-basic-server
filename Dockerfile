@@ -1,4 +1,4 @@
-FROM node:latest
+FROM --platform=${TARGETPLATFORM} node:latest
 
 RUN adduser --disabled-password --home /home/container container
 

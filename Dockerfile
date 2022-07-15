@@ -7,7 +7,7 @@ ENV  USER=container HOME=/home/container
 
 WORKDIR /home/container
 
-COPY package.json 
+COPY package.json ./
 RUN npm install --no-optional
 
 COPY ./entrypoint.sh /entrypoint.sh
